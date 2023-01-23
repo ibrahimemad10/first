@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Bootstrap File -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- MDB Cbn -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" />
+  <!-- Font awesome Cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <!-- Css Files -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/text.css" />
+  <title>خمسات - لبيع وشراء الخدمات المصغرة</title>
+  <link rel="icon" href="images/khamsat-icon.jpeg" />
+</head>
+
+<body>
+  <div class="p-md-0">
+    <!-- Start Navbar -->
+    <nav class="navbar fixed-top px-5 py-0 m-0 w-100">
+      <div class="container-fluid">
+        <div class="h-100 d-flex align-items-center position-relative">
+          <button class="navbar-toggler h-100 px-3" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="khamsat-logo d-flex justify-content-center align-items-center px-3 h-100">
+            <img src="images/khamsat-logo.png" alt="img" class="hide w-100" />
+          </div>
+          <div class="khamsat-icon position-absolute d-none">
+            <img src="images/khamsat-icon.jpeg" alt="img" class="w-100 h-100" />
+          </div>
+          <div class="hide h-100">
+            <button class="categories button h-100 px-3">
+              <i class="fa-solid fa-layer-group ms-1"></i>
+              <span>التصنيفات</span>
+            </button>
+          </div>
+        </div>
+        <div class="d-flex align-items-center h-100">
+          <div class="hide h-100">
+            <button class="button h-100 px-3" title="بحث">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <div class="h-100">
+            <button class="button h-100 px-3" title="المشتريات">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </div>
+          <div class="me-3">
+            <button class="account px-2 py-2" title="المشتريات">
+              <i class="fa-solid fa-right-to-bracket ms-2"></i>
+              <span>دخول</span>
+            </button>
+          </div>
+          <div class="hide me-3">
+            <button class="account px-2 py-2" title="المشتريات">
+              <i class="fa-solid fa-user-plus ms-2"></i>
+              <span>حساب جديد</span>
+            </button>
+          </div>
+        </div>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header mb-4">
+            <div class="offcanvas-title" id="offcanvasNavbarLabel">
+              <img src="images/khamsat-logo.png" class="w-100" alt="" />
+            </div>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="accordion accordion-flush overflow-auto" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  <i class="fa-solid fa-layer-group ms-2"></i>
+                  <span>التصنيفات</span>
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample">
+                <div>
+                  <button class="button-menu accordion-btn">
+                    <span>اعمال</span>
+                  </button>
+                </div>
+                <div>
+                  <button class="button-menu accordion-btn">
+                    <span>برمجة وتطوير</span>
+                  </button>
+                </div>
+                <div>
+                  <button class="button-menu accordion-btn">
+                    <span>تسويق الكتروني</span>
+                  </button>
+                </div>
+                <div>
+                  <button class="button-menu accordion-btn">
+                    <span>تدريب عن بعد</span>
+                  </button>
+                </div>
+                <div>
+                  <button class="button-menu accordion-btn">
+                    <span>تصميم فيديو</span>
+                  </button>
+                </div>
+                <div>
+                  <button class="button-menu accordion-btn">
+                    <span>تصميم</span>
+                  </button>
+                </div>
+                <div>
+                  <button class="button-menu accordion-btn">
+                    <span>صوتيات</span>
+                  </button>
+                </div>
+                <div>
+                  <button class="button-menu accordion-btn">
+                    <span>كتابة وترجمة</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  <span>مجتمع خمسات</span>
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample">
+                <div>
+                  <button class="button-menu accordion-btn">
+                    <span>نماذج اعمال قمت بتنفيذها</span>
+                  </button>
+                </div>
+                <div>
+                  <button class="button-menu accordion-btn">
+                    <span>طلبات الخدمات غير الموجودة</span>
+                  </button>
+                </div>
+                <div>
+                  <button class="button-menu accordion-btn">
+                    <span>تجارب وقصص المستخدمين</span>
+                  </button>
+                </div>
+                <div>
+                  <button class="button-menu accordion-btn">
+                    <span>أمور عامة حول خمسات</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  <span>خمسات</span>
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample">
+                <div>
+                  <button class="button-menu accordion-btn">
+                    <span>حول خمسات</span>
+                  </button>
+                </div>
+                <div>
+                  <button class="button-menu accordion-btn">
+                    <span>كيف يعمل الموقع</span>
+                  </button>
+                </div>
+                <div>
+                  <button class="button-menu accordion-btn">
+                    <span>الأسئلة الشائغة</span>
+                  </button>
+                </div>
+                <div>
+                  <button class="button-menu accordion-btn">
+                    <span>ضمان الحقوق</span>
+                  </button>
+                </div>
+                <div>
+                  <button class="button-menu accordion-btn">
+                    <span>شروط الاستخدام</span>
+                  </button>
+                </div>
+                <div>
+                  <button class="button-menu accordion-btn">
+                    <span>بيان الخصوصية</span>
+                  </button>
+                </div>
+                <div>
+                  <button class="button-menu accordion-btn">
+                    <span>المستويات</span>
+                  </button>
+                </div>
+                <div>
+                  <button class="button-menu accordion-btn">
+                    <span>أمور عامة حول خمسات</span>
+                  </button>
+                </div>
+                <div>
+                  <button class="button-menu accordion-btn">
+                    <span>التسويق بالعمولة</span>
+                  </button>
+                </div>
+                <div>
+                  <button class="button-menu accordion-btn">
+                    <span>مركز المساعدة</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  <i class="fa-solid fa-layer-group ms-2"></i>
+                  <span>التصنيفات</span>
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample">
+                <div>
+                  <button class="button-menu accordion-btn">
+                    <span>مجتمع خمسات</span>
+                  </button>
+                </div>
+                <div>
+                  <button class="button-menu accordion-btn">
+                    <span>مدونة خمسات</span>
+                  </button>
+                </div>
+                <div>
+                  <button class="button-menu accordion-btn">
+                    <span>تويتر</span>
+                  </button>
+                </div>
+                <div>
+                  <button class="button-menu accordion-btn">
+                    <span>فيسبوك</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Start Main Section -->
+    <section class="main d-flex justify-content-center align-items-center text-center">
+      <div class="title-web w-50 position-relative">
+        <h1 class="mb-5">أكبر سوق عربي لبيع وشراء الخدمات المصغرة</h1>
+        <h5 class="mb-5">أنجز أعمالك بسهولة وأمان بأسعار تبدأ من 5$ فقط</h5>
+        <div class="w-100 position-relative">
+          <input type="text" class="w-100 px-3 py-4" placeholder="جرِّب تصميم شعار او ترجمة ..." />
+          <button class="search position-absolute my-2">
+            <span>بحث</span>
+          </button>
+        </div>
+        <div class="more-info mt-4 position-absolute">
+          <button id="#More">
+            <span class="d-block mb-3">معلومات اكثر</span>
+            <i class="fa-solid fa-angles-down"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- End Main Section -->
+
+    <!-- Start Services Section -->
+    <section class="pt-2 mb-5 w-100 text-center">
+      <div class="mt-5 mb-5">
+        <h2>كافة الخدمات الإبداعية والاحترافية لتطوير وتنمية أعمالك</h2>
+      </div>
+      <div class="services row justify-content-around m-0 p-4 p-sm-5">
+        <div class="img mb-4 px-3 m-0 col-12 col-sm-6 col-md-3">
+          <div class="position-relative w-100 h-100">
+            <img src="images/bussines.jpg" alt="img" class="w-100 h-100" />
+            <div class="title-card position-absolute d-flex justify-content-center align-items-center w-100 h-100">
+              <h3>اعمال</h3>
+            </div>
+          </div>
+        </div>
+        <div class="img mb-4 px-3 m-0 col-12 col-sm-6 col-md-3">
+          <div class="position-relative w-100 h-100">
+            <img src="images/development.jpg" alt="img" class="w-100 h-100" />
+            <div class="title-card position-absolute d-flex justify-content-center align-items-center w-100 h-100">
+              <h3>برمجة وتطوير</h3>
+            </div>
+          </div>
+        </div>
+        <div class="img mb-4 px-3 m-0 col-12 col-sm-6 col-md-3">
+          <div class="position-relative w-100 h-100">
+            <img src="images/social.jpg" alt="img" class="w-100 h-100" />
+            <div class="title-card position-absolute d-flex justify-content-center align-items-center w-100 h-100">
+              <h3>التسويق الالكتروني</h3>
+            </div>
+          </div>
+        </div>
+        <div class="img mb-4 px-3 m-0 col-12 col-sm-6 col-md-3">
+          <div class="position-relative w-100 h-100">
+            <img src="images/remote.jpg" alt="img" class="w-100 h-100" />
+            <div class="title-card position-absolute d-flex justify-content-center align-items-center w-100 h-100">
+              <h3>تدريب عن بعد</h3>
+            </div>
+          </div>
+        </div>
+        <div class="img mb-4 px-3 m-0 col-12 col-sm-6 col-md-3">
+          <div class="position-relative w-100 h-100">
+            <img src="images/video.jpg" alt="img" class="w-100 h-100" />
+            <div class="title-card position-absolute d-flex justify-content-center align-items-center w-100 h-100">
+              <h3>تصميم فيديو</h3>
+            </div>
+          </div>
+        </div>
+        <div class="img mb-4 px-3 m-0 col-12 col-sm-6 col-md-3">
+          <div class="position-relative w-100 h-100">
+            <img src="images/design.jpg" alt="img" class="w-100 h-100" />
+            <div class="title-card position-absolute d-flex justify-content-center align-items-center w-100 h-100">
+              <h3>تصميم</h3>
+            </div>
+          </div>
+        </div>
+        <div class="img mb-4 px-3 m-0 col-12 col-sm-6 col-md-3">
+          <div class="position-relative w-100 h-100">
+            <img src="images/audio.jpg" alt="img" class="w-100 h-100" />
+            <div class="title-card position-absolute d-flex justify-content-center align-items-center w-100 h-100">
+              <h3>صوتيات</h3>
+            </div>
+          </div>
+        </div>
+        <div class="img mb-4 px-3 m-0 col-12 col-sm-6 col-md-3">
+          <div class="position-relative w-100 h-100">
+            <img src="images//translate.jpg" alt="img" class="w-100 h-100" />
+            <div class="title-card position-absolute d-flex justify-content-center align-items-center w-100 h-100">
+              <h3>كتابة وترجمة</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Services Section -->
+
+    <!-- Start How To Section -->
+    <section class="use w-100 py-5" id="More">
+      <h2 class="text-center">كيف يعمل موقع خمسات</h2>
+      <div class="my-5 row p-md-3 m-0 justify-content-center">
+        <div class="px-4 mb-5 mb-md-0 col-12 col-md-4">
+          <div class="how-to pt-4 px-4 d-flex d-md-block d-lg-flex position-relative">
+            <div class="svg-img ms-3 mb-3">
+              <img src="images/how-1.svg" alt="img" class="w-100 h-100" />
+            </div>
+            <div class="desc">
+              <h5>استعراض الخدمات</h5>
+              <p class="pb-3">
+                ابحث عن الخدمة التي تحتاجها باستخدام مربع البحث في الأعلى أو
+                عبرالتصنيفات.
+              </p>
+            </div>
+            <div class="number position-absolute bottom-0 start-0 d-flex justify-content-center align-items-center">
+              <h4 class="mt-2">1</h4>
+            </div>
+          </div>
+        </div>
+        <div class="px-4 mb-5 mb-md-0 col-12 col-md-4">
+          <div class="how-to pt-4 px-4 d-flex d-md-block d-lg-flex position-relative">
+            <div class="svg-img ms-3 mb-3">
+              <img src="images/how-2.svg" alt="img" class="w-100 h-100" />
+            </div>
+            <div class="desc">
+              <h5>اطلب الخدمة</h5>
+              <p class="pb-3">
+                راجع وصف الخدمة وتقييمات المشترين ثم اطلبها لفتح تواصل مع
+                البائع.
+              </p>
+            </div>
+            <div class="number position-absolute bottom-0 start-0 d-flex justify-content-center align-items-center">
+              <h4 class="mt-2">2</h4>
+            </div>
+          </div>
+        </div>
+        <div class="px-4 mb-5 mb-md-0 col-12 col-md-4">
+          <div class="how-to pt-4 px-4 d-flex d-md-block d-lg-flex position-relative">
+            <div class="svg-img ms-3 mb-3">
+              <img src="images/how-3.svg" alt="img" class="w-100 h-100" />
+            </div>
+            <div class="desc">
+              <h5>استلم خدمتك</h5>
+              <p class="pb-3">
+                تواصل مع البائع مباشرة داخل موقع خمسات حتى استلام طلبك كاملاً.
+              </p>
+            </div>
+            <div class="number position-absolute bottom-0 start-0 d-flex justify-content-center align-items-center">
+              <h4 class="mt-2">3</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End How To Section -->
+
+    <!-- Start Projects Section -->
+    <section class="container-md pt-5">
+      <div class="mt-4">
+        <div class="d-flex justify-content-between align-items-center w-100">
+          <h5>خدمات اعمال</h5>
+          <button class="button-more">عرض الجميع</button>
+        </div>
+        <div class="row mt-4 px-0">
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="col-12">
+              <a href="##">
+                <img src="images/bussines-1.jpg" alt="img" class="w-100 h-100" />
+              </a>
+            </div>
+            <div class="mt-2">
+              <a href="##" class="text-decoration-none link-card"
+                title=" خطة عمل تفصيلية للمشاريع ( ملف ورد واكسيل وبي دي اف )">
+                خطة عمل تفصيلية للمشاريع ( ملف ورد واكسيل وبي دي اف )
+              </a>
+              <div class="mt-2">
+                <span class="desc-link">اعمال / خدمات اعمال</span>
+              </div>
+              <div class="mt-1 d-flex align-items-center">
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <span class="desc-link me-1" title="عدد التقييمات">(8)</span>
+              </div>
+              <p class="mt-2 fw-bold">تبدأ من 25.00$</p>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="col-12">
+              <a href="##">
+                <img src="images/bussines-2.jpg" alt="img" class="w-100 h-100" />
+              </a>
+            </div>
+            <div class="mt-2">
+              <a href="##" class="text-decoration-none link-card"
+                title=" خطة عمل تفصيلية للمشاريع ( ملف ورد واكسيل وبي دي اف )">
+                مقترح للعمل على إعداد الخطط الاستراتيجية للمتاجر والشركات
+              </a>
+              <div class="mt-2">
+                <span class="desc-link">اعمال / خدمات اعمال</span>
+              </div>
+              <div class="mt-1 d-flex align-items-center">
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <span class="desc-link me-1" title="عدد التقييمات">(4)</span>
+              </div>
+              <p class="mt-2 fw-bold">تبدأ من 25.00$</p>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="col-12">
+              <a href="##">
+                <img src="images/bussines-3.jpg" alt="img" class="w-100 h-100" />
+              </a>
+            </div>
+            <div class="mt-2">
+              <a href="##" class="text-decoration-none link-card"
+                title=" خطة عمل تفصيلية للمشاريع ( ملف ورد واكسيل وبي دي اف )">
+                صياغة سياسات المواقع والتطبيقات الالكترونية
+              </a>
+              <div class="mt-2">
+                <span class="desc-link">اعمال / استشارات اعمال</span>
+              </div>
+              <div class="mt-1 d-flex align-items-center">
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <span class="desc-link me-1" title="عدد التقييمات">(19)</span>
+              </div>
+              <p class="mt-2 fw-bold">تبدأ من 15.00$</p>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="col-12">
+              <a href="##">
+                <img src="images/bussines4.jpg" alt="img" class="w-100 h-100" />
+              </a>
+            </div>
+            <div class="mt-2">
+              <a href="##" class="text-decoration-none link-card"
+                title=" خطة عمل تفصيلية للمشاريع ( ملف ورد واكسيل وبي دي اف )">
+                دراسة جدوى اقتصادية شاملة باللغة العربية
+              </a>
+              <div class="mt-2">
+                <span class="desc-link">اعمال / خدمات اعمال</span>
+              </div>
+              <div class="mt-1 d-flex align-items-center">
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <span class="desc-link me-1" title="عدد التقييمات">(69)</span>
+              </div>
+              <p class="mt-2 fw-bold">تبدأ من 25.00$</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-4">
+        <div class="d-flex justify-content-between align-items-center w-100">
+          <h5>خدمات برمجة وتطوير</h5>
+          <button class="button-more">عرض الجميع</button>
+        </div>
+        <div class="row mt-4 px-0">
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="col-12">
+              <a href="##">
+                <img src="images/development-1.png" alt="img" class="w-100 h-100" />
+              </a>
+            </div>
+            <div class="mt-2">
+              <a href="##" class="text-decoration-none link-card" title=" تصميم و برمجة مواقع بمواصفات عالمية">
+                تصميم و برمجة مواقع بمواصفات عالمية
+              </a>
+              <div class="mt-2">
+                <span class="desc-link">برمجة وتطوير / برمجة CSS و HTML</span>
+              </div>
+              <div class="mt-1 d-flex align-items-center">
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <span class="desc-link me-1" title="عدد التقييمات">(81)</span>
+              </div>
+              <p class="mt-2 fw-bold">تبدأ من 45.00$</p>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="col-12">
+              <a href="##">
+                <img src="images/development-2.png" alt="img" class="w-100 h-100" />
+              </a>
+            </div>
+            <div class="mt-2">
+              <a href="##" class="text-decoration-none link-card"
+                title=" اصمم لك برنامج اكسس يعمل علي جهاز الكمبيوتر لاي غرض تريده">
+                اصمم لك برنامج اكسس يعمل علي جهاز الكمبيوتر لاي غرض تريده
+              </a>
+              <div class="mt-2">
+                <span class="desc-link">برمجة وتطوير / تطبيقات سطح المكتب</span>
+              </div>
+              <div class="mt-1 d-flex align-items-center">
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <span class="desc-link me-1" title="عدد التقييمات">(18)</span>
+              </div>
+              <p class="mt-2 fw-bold">تبدأ من 25.00$</p>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="col-12">
+              <a href="##">
+                <img src="images/development-3.png" alt="img" class="w-100 h-100" />
+              </a>
+            </div>
+            <div class="mt-2">
+              <a href="##" class="text-decoration-none link-card" title=" تصميم موقع الكتروني من الصفر">
+                تصميم موقع الكتروني من الصفر
+              </a>
+              <div class="mt-2">
+                <span class="desc-link">برمجة وتطوير / تطوير متاجر الكترونية</span>
+              </div>
+              <div class="mt-1 d-flex align-items-center">
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <span class="desc-link me-1" title="عدد التقييمات">(70)</span>
+              </div>
+              <p class="mt-2 fw-bold">تبدأ من 50.00$</p>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="col-12">
+              <a href="##">
+                <img src="images/development-4.jpg" alt="img" class="w-100 h-100" />
+              </a>
+            </div>
+            <div class="mt-2">
+              <a href="##" class="text-decoration-none link-card" title=" برمجة اضافة لمتصفح جوجل كروم">
+                برمجة اضافة لمتصفح جوجل كروم
+              </a>
+              <div class="mt-2">
+                <span class="desc-link">برمجة وتطوير / اخري</span>
+              </div>
+              <div class="mt-1 d-flex align-items-center">
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <span class="desc-link me-1" title="عدد التقييمات">(11)</span>
+              </div>
+              <p class="mt-2 fw-bold">تبدأ من 30.00$</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-4">
+        <div class="d-flex justify-content-between align-items-center w-100">
+          <h5>خدمات التسويق الالكتروني</h5>
+          <button class="button-more">عرض الجميع</button>
+        </div>
+        <div class="row mt-4 px-0">
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="col-12">
+              <a href="##">
+                <img src="images/social-1.jpg" alt="img" class="w-100 h-100" />
+              </a>
+            </div>
+            <div class="mt-2">
+              <a href="##" class="text-decoration-none link-card" title="اعلان نصى دوفلو فى موقع اَمني">
+                اعلان نصى دوفلو فى موقع اَمني
+              </a>
+              <div class="mt-2">
+                <span class="desc-link">التسويق الالكتروني / اعلانات المواقع</span>
+              </div>
+              <div class="mt-1 d-flex align-items-center">
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <span class="desc-link me-1" title="عدد التقييمات">(8)</span>
+              </div>
+              <p class="mt-2 fw-bold">تبدأ من 5.00$</p>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="col-12">
+              <a href="##">
+                <img src="images/social-2.png" alt="img" class="w-100 h-100" />
+              </a>
+            </div>
+            <div class="mt-2">
+              <a href="##" class="text-decoration-none link-card"
+                title="جيست بوست Guest Post في مدونة تقنية دومين اثيورتي 54 عالي">
+                جيست بوست Guest Post في مدونة تقنية دومين اثيورتي 54 عالي
+              </a>
+              <div class="mt-2">
+                <span class="desc-link">التسويق الالكتروني / خدمات سيو SEO</span>
+              </div>
+              <div class="mt-1 d-flex align-items-center">
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <span class="desc-link me-1" title="عدد التقييمات">(14)</span>
+              </div>
+              <p class="mt-2 fw-bold">تبدأ من 5.00$</p>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="col-12">
+              <a href="##">
+                <img src="images/social-3.jpg" alt="img" class="w-100 h-100" />
+              </a>
+            </div>
+            <div class="mt-2">
+              <a href="##" class="text-decoration-none link-card"
+                title=" 25 Dofollow Backlinks ذو جودة عالية PA & DA يدوي وامن 100%">
+                25 Dofollow Backlinks ذو جودة عالية PA & DA يدوي وامن 100%
+              </a>
+              <div class="mt-2">
+                <span class="desc-link">التسويق الالكتروني / اخري</span>
+              </div>
+              <div class="mt-1 d-flex align-items-center">
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <span class="desc-link me-1" title="عدد التقييمات">(22)</span>
+              </div>
+              <p class="mt-2 fw-bold">تبدأ من 15.00$</p>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="col-12">
+              <a href="##">
+                <img src="images/social-4.jpg" alt="img" class="w-100 h-100" />
+              </a>
+            </div>
+            <div class="mt-2">
+              <a href="##" class="text-decoration-none link-card"
+                title="جيست بوست في موقع صبايا لدعم موقعك وتصدر محركات البحث">
+                جيست بوست في موقع صبايا لدعم موقعك وتصدر محركات البحث
+              </a>
+              <div class="mt-2">
+                <span class="desc-link">التسويق الالكتروني / اعلانات المواقع</span>
+              </div>
+              <div class="mt-1 d-flex align-items-center">
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <span class="desc-link me-1" title="عدد التقييمات">(10)</span>
+              </div>
+              <p class="mt-2 fw-bold">تبدأ من 25.00$</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-4">
+        <div class="d-flex justify-content-between align-items-center w-100">
+          <h5>خدمات تدريب عن بعد</h5>
+          <button class="button-more">عرض الجميع</button>
+        </div>
+        <div class="row mt-4 px-0">
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="col-12">
+              <a href="##">
+                <img src="images/remote-1.jpg" alt="img" class="w-100 h-100" />
+              </a>
+            </div>
+            <div class="mt-2">
+              <a href="##" class="text-decoration-none link-card"
+                title="استشارات ونصائح عن كيفية إعداد الأبحاث والرسائل التربوية">
+                استشارات ونصائح عن كيفية إعداد الأبحاث والرسائل التربوية
+              </a>
+              <div class="mt-2">
+                <span class="desc-link">تدريب عن بعد / مساعدة بحل الواجبات</span>
+              </div>
+              <div class="mt-1 d-flex align-items-center">
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <span class="desc-link me-1" title="عدد التقييمات">(18)</span>
+              </div>
+              <p class="mt-2 fw-bold">تبدأ من 5.00$</p>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="col-12">
+              <a href="##">
+                <img src="images/remote-2.png" alt="img" class="w-100 h-100" />
+              </a>
+            </div>
+            <div class="mt-2">
+              <a href="##" class="text-decoration-none link-card" title="شرح وحل واجبات رياضيات بكل فروعها لكل المراحل">
+                شرح وحل واجبات رياضيات بكل فروعها لكل المراحل
+              </a>
+              <div class="mt-2">
+                <span class="desc-link">تدريب عن بعد / مساعدة بحل الواجبات</span>
+              </div>
+              <div class="mt-1 d-flex align-items-center">
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <span class="desc-link me-1" title="عدد التقييمات">(34)</span>
+              </div>
+              <p class="mt-2 fw-bold">تبدأ من 5.00$</p>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="col-12">
+              <a href="##">
+                <img src="images/social-3.jpg" alt="img" class="w-100 h-100" />
+              </a>
+            </div>
+            <div class="mt-2">
+              <a href="##" class="text-decoration-none link-card" title="تعلم تطوير مواقع الويب بإطار عمل Laravel">
+                تعلم تطوير مواقع الويب بإطار عمل Laravel
+              </a>
+              <div class="mt-2">
+                <span class="desc-link">تدريب عن بعد / تعلم برمجة</span>
+              </div>
+              <div class="mt-1 d-flex align-items-center">
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <span class="desc-link me-1" title="عدد التقييمات">(9)</span>
+              </div>
+              <p class="mt-2 fw-bold">تبدأ من 5.00$</p>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="col-12">
+              <a href="##">
+                <img src="images/remote-4.jpg" alt="img" class="w-100 h-100" />
+              </a>
+            </div>
+            <div class="mt-2">
+              <a href="##" class="text-decoration-none link-card"
+                title="إعطاء دروس وحل المسائل في مجال هندسة المعلوماتية والحواسيب">
+                إعطاء دروس وحل المسائل في مجال هندسة المعلوماتية والحواسيب
+              </a>
+              <div class="mt-2">
+                <span class="desc-link">تدريب عن بعد / تعلم برمجة</span>
+              </div>
+              <div class="mt-1 d-flex align-items-center">
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <span class="desc-link me-1" title="عدد التقييمات">(17)</span>
+              </div>
+              <p class="mt-2 fw-bold">تبدأ من 5.00$</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-4">
+        <div class="d-flex justify-content-between align-items-center w-100">
+          <h5>خدمات تصميم فيديو</h5>
+          <button class="button-more">عرض الجميع</button>
+        </div>
+        <div class="row mt-4 px-0">
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="col-12">
+              <a href="##">
+                <img src="images/video-1.jpg" alt="img" class="w-100 h-100" />
+              </a>
+            </div>
+            <div class="mt-2">
+              <a href="##" class="text-decoration-none link-card" title="فيديو موشن جرافيك لكل 5 ثوانى">
+                فيديو موشن جرافيك لكل 5 ثوانى
+              </a>
+              <div class="mt-2">
+                <span class="desc-link">تصميم فيديو / موشن جرافيك</span>
+              </div>
+              <div class="mt-1 d-flex align-items-center">
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <span class="desc-link me-1" title="عدد التقييمات">(158)</span>
+              </div>
+              <p class="mt-2 fw-bold">تبدأ من 5.00$</p>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="col-12">
+              <a href="##">
+                <img src="images/video-2.png" alt="img" class="w-100 h-100" />
+              </a>
+            </div>
+            <div class="mt-2">
+              <a href="##" class="text-decoration-none link-card" title="سأصمم لك فيديو اعلاني لتسويق منتجاتك">
+                سأصمم لك فيديو اعلاني لتسويق منتجاتك
+              </a>
+              <div class="mt-2">
+                <span class="desc-link">تصميم فيديو / وايت بورد</span>
+              </div>
+              <div class="mt-1 d-flex align-items-center">
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <span class="desc-link me-1" title="عدد التقييمات">(233)</span>
+              </div>
+              <p class="mt-2 fw-bold">تبدأ من 5.00$</p>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="col-12">
+              <a href="##">
+                <img src="images/video-3.png" alt="img" class="w-100 h-100" />
+              </a>
+            </div>
+            <div class="mt-2">
+              <a href="##" class="text-decoration-none link-card" title="تنفيذ فيديو موشن جرافيك - 10 ثواني">
+                تنفيذ فيديو موشن جرافيك - 10 ثواني
+              </a>
+              <div class="mt-2">
+                <span class="desc-link">تصميم فيديو / موشن جرافيك</span>
+              </div>
+              <div class="mt-1 d-flex align-items-center">
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <span class="desc-link me-1" title="عدد التقييمات">(190)</span>
+              </div>
+              <p class="mt-2 fw-bold">تبدأ من 15.00$</p>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="col-12">
+              <a href="##">
+                <img src="images/video-4.jpg" alt="img" class="w-100 h-100" />
+              </a>
+            </div>
+            <div class="mt-2">
+              <a href="##" class="text-decoration-none link-card" title="اقدم لك فيديو اعلاني احترافي لموقعك او منتجك">
+                اقدم لك فيديو اعلاني احترافي لموقعك او منتجك
+              </a>
+              <div class="mt-2">
+                <span class="desc-link">تصميم فيديو / موشن جرافيك</span>
+              </div>
+              <div class="mt-1 d-flex align-items-center">
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <span class="desc-link me-1" title="عدد التقييمات">(333)</span>
+              </div>
+              <p class="mt-2 fw-bold">تبدأ من 50.00$</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-4">
+        <div class="d-flex justify-content-between align-items-center w-100">
+          <h5>خدمات تصميم</h5>
+          <button class="button-more">عرض الجميع</button>
+        </div>
+        <div class="row mt-4 px-0">
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="col-12">
+              <a href="##">
+                <img src="images/design-1.png" alt="img" class="w-100 h-100" />
+              </a>
+            </div>
+            <div class="mt-2">
+              <a href="##" class="text-decoration-none link-card" title="تصاميم و ديكورات داخلية فخمة و عصرية">
+                تصاميم و ديكورات داخلية فخمة و عصرية
+              </a>
+              <div class="mt-2">
+                <span class="desc-link">تصميم / تصميم معماري وديكور</span>
+              </div>
+              <div class="mt-1 d-flex align-items-center">
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <span class="desc-link me-1" title="عدد التقييمات">(22)</span>
+              </div>
+              <p class="mt-2 fw-bold">تبدأ من 5.00$</p>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="col-12">
+              <a href="##">
+                <img src="images/design-2.jpg" alt="img" class="w-100 h-100" />
+              </a>
+            </div>
+            <div class="mt-2">
+              <a href="##" class="text-decoration-none link-card" title="تصميم عروض بوربوينت احترافية">
+                تصميم عروض بوربوينت احترافية
+              </a>
+              <div class="mt-2">
+                <span class="desc-link">تصميم / تصميم عروض تقديمية</span>
+              </div>
+              <div class="mt-1 d-flex align-items-center">
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <span class="desc-link me-1" title="عدد التقييمات">(20)</span>
+              </div>
+              <p class="mt-2 fw-bold">تبدأ من 5.00$</p>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="col-12">
+              <a href="##">
+                <img src="images/design-3.png" alt="img" class="w-100 h-100" />
+              </a>
+            </div>
+            <div class="mt-2">
+              <a href="##" class="text-decoration-none link-card" title="تصميم داخلي أعلى جودة بأقل الأسعار (لكل 5م²)">
+                تصميم داخلي أعلى جودة بأقل الأسعار (لكل 5م²)
+              </a>
+              <div class="mt-2">
+                <span class="desc-link">تصميم / تصميم معماري وديكور</span>
+              </div>
+              <div class="mt-1 d-flex align-items-center">
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <span class="desc-link me-1" title="عدد التقييمات">(18)</span>
+              </div>
+              <p class="mt-2 fw-bold">تبدأ من 10.00$</p>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="col-12">
+              <a href="##">
+                <img src="images/design-4.png" alt="img" class="w-100 h-100" />
+              </a>
+            </div>
+            <div class="mt-2">
+              <a href="##" class="text-decoration-none link-card"
+                title="تصميم معرض/ عربة / بوث (كشك) / استاند باحترافية">
+                تصميم معرض/ عربة / بوث (كشك) / استاند باحترافية
+              </a>
+              <div class="mt-2">
+                <span class="desc-link">تصميم / تصميم معماري وديكور</span>
+              </div>
+              <div class="mt-1 d-flex align-items-center">
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <span class="desc-link me-1" title="عدد التقييمات">(69)</span>
+              </div>
+              <p class="mt-2 fw-bold">تبدأ من 25.00$</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-4">
+        <div class="d-flex justify-content-between align-items-center w-100">
+          <h5>خدمات صوتيات</h5>
+          <button class="button-more">عرض الجميع</button>
+        </div>
+        <div class="row mt-4 px-0">
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="col-12">
+              <a href="##">
+                <img src="images/audio-1.jpg" alt="img" class="w-100 h-100" />
+              </a>
+            </div>
+            <div class="mt-2">
+              <a href="##" class="text-decoration-none link-card"
+                title="خدمة التلحين لاي قصيدة تريديها و بالمقام الذي يعجبك">
+                خدمة التلحين لاي قصيدة تريديها و بالمقام الذي يعجبك
+              </a>
+              <div class="mt-2">
+                <span class="desc-link">صوتيات / تحرير بودكاست</span>
+              </div>
+              <div class="mt-1 d-flex align-items-center">
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <span class="desc-link me-1" title="عدد التقييمات">(66)</span>
+              </div>
+              <p class="mt-2 fw-bold">تبدأ من 25.00$</p>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="col-12">
+              <a href="##">
+                <img src="images/audio-2.jpg" alt="img" class="w-100 h-100" />
+              </a>
+            </div>
+            <div class="mt-2">
+              <a href="##" class="text-decoration-none link-card"
+                title="تسجيل صوتي بجودة عالية ومؤثرات وهندسة صوتية يوجد عينة">
+                تسجيل صوتي بجودة عالية ومؤثرات وهندسة صوتية يوجد عينة
+              </a>
+              <div class="mt-2">
+                <span class="desc-link">صوتيات / تعليق صوتي</span>
+              </div>
+              <div class="mt-1 d-flex align-items-center">
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <span class="desc-link me-1" title="عدد التقييمات">(114)</span>
+              </div>
+              <p class="mt-2 fw-bold">تبدأ من 5.00$</p>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="col-12">
+              <a href="##">
+                <img src="images/audio-3.jpg" alt="img" class="w-100 h-100" />
+              </a>
+            </div>
+            <div class="mt-2">
+              <a href="##" class="text-decoration-none link-card"
+                title="توزيع موسيقي لاغنية او تلحين كلمات لكل 15 ثانية">
+                توزيع موسيقي لاغنية او تلحين كلمات لكل 15 ثانية
+              </a>
+              <div class="mt-2">
+                <span class="desc-link">صوتيات / المعالجة الصوتية</span>
+              </div>
+              <div class="mt-1 d-flex align-items-center">
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <span class="desc-link me-1" title="عدد التقييمات">(9)</span>
+              </div>
+              <p class="mt-2 fw-bold">تبدأ من 5.00$</p>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="col-12">
+              <a href="##">
+                <img src="images/audio-4.jpg" alt="img" class="w-100 h-100" />
+              </a>
+            </div>
+            <div class="mt-2">
+              <a href="##" class="text-decoration-none link-card" title="خدمة إحترافية للتعليق الصوتي">
+                خدمة إحترافية للتعليق الصوتي
+              </a>
+              <div class="mt-2">
+                <span class="desc-link">صوتيات / تعليق صوتي</span>
+              </div>
+              <div class="mt-1 d-flex align-items-center">
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <span class="desc-link me-1" title="عدد التقييمات">(139)</span>
+              </div>
+              <p class="mt-2 fw-bold">تبدأ من 5.00$</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-4">
+        <div class="d-flex justify-content-between align-items-center w-100">
+          <h5>خدمات كتابة وترجمة</h5>
+          <button class="button-more">عرض الجميع</button>
+        </div>
+        <div class="row mt-4 px-0">
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="col-12">
+              <a href="##">
+                <img src="images/translate-1.jpg" alt="img" class="w-100 h-100" />
+              </a>
+            </div>
+            <div class="mt-2">
+              <a href="##" class="text-decoration-none link-card"
+                title="تدقيق ومراجعة لغوية لجميع أنواع النصوص باللغة الإنجليزية">
+                تدقيق ومراجعة لغوية لجميع أنواع النصوص باللغة الإنجليزية
+              </a>
+              <div class="mt-2">
+                <span class="desc-link">كتابة وترجمة / خدمات تدقيق لغوي</span>
+              </div>
+              <div class="mt-1 d-flex align-items-center">
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <span class="desc-link me-1" title="عدد التقييمات">(99)</span>
+              </div>
+              <p class="mt-2 fw-bold">تبدأ من 10.00$</p>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="col-12">
+              <a href="##">
+                <img src="images/translate-2.jpg" alt="img" class="w-100 h-100" />
+              </a>
+            </div>
+            <div class="mt-2">
+              <a href="##" class="text-decoration-none link-card" title="كتابة كافة الأبحاث القانونية">
+                كتابة كافة الأبحاث القانونية
+              </a>
+              <div class="mt-2">
+                <span class="desc-link">كتابة وترجمة / كتابة مقالات ومراجعات</span>
+              </div>
+              <div class="mt-1 d-flex align-items-center">
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <span class="desc-link me-1" title="عدد التقييمات">(14)</span>
+              </div>
+              <p class="mt-2 fw-bold">تبدأ من 10.00$</p>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="col-12">
+              <a href="##">
+                <img src="images/translate-3.png" alt="img" class="w-100 h-100" />
+              </a>
+            </div>
+            <div class="mt-2">
+              <a href="##" class="text-decoration-none link-card"
+                title="تفريغ ملفات ال pdf والصور والمكتوبة بخط اليد الي وورد">
+                تفريغ ملفات ال pdf والصور والمكتوبة بخط اليد الي وورد
+              </a>
+              <div class="mt-2">
+                <span class="desc-link">كتابة وترجمة / تفريغ نصوص</span>
+              </div>
+              <div class="mt-1 d-flex align-items-center">
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <span class="desc-link me-1" title="عدد التقييمات">(30)</span>
+              </div>
+              <p class="mt-2 fw-bold">تبدأ من 15.00$</p>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-3">
+            <div class="col-12">
+              <a href="##">
+                <img src="images/translate-4.jpg" alt="img" class="w-100 h-100" />
+              </a>
+            </div>
+            <div class="mt-2">
+              <a href="##" class="text-decoration-none link-card"
+                title="الأبحاث القانونية والشرعية والتربوية والمقالات">
+                الأبحاث القانونية والشرعية والتربوية والمقالات
+              </a>
+              <div class="mt-2">
+                <span class="desc-link">كتابة وترجمة / كتابة مقالات ومراجعات</span>
+              </div>
+              <div class="mt-1 d-flex align-items-center">
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <span class="desc-link me-1" title="عدد التقييمات">(7)</span>
+              </div>
+              <p class="mt-2 fw-bold">تبدأ من 25.00$</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Projects Section -->
+
+    <!-- Start Common Questions Section -->
+    <section class="questions my-3 p-5">
+      <div class="container px-5">
+        <h3 class="mb-5 text-center">الاسئلة الشائعة</h3>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                data-mdb-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                <h5>ما هو خمسات؟</h5>
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+              data-mdb-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                خمسات هو أكبر سوق عربي لبيع وشراء الخدمات المصغرة. يجمع خمسات بين الشباب العربي الموهوب المستعد لتقديم
+                خبراته ومهاراته على شكل خدمات مصغرة بأسعار تبدأ من 5 دولار، وبين الأفراد ورواد الأعمال الذين يحتاجون هذه
+                الخدمات لتساعدهم في تنمية وتطوير أعمالهم.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                data-mdb-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                <h5>كيف يمكن أن أستفيد من خمسات؟</h5>
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+              data-mdb-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                قد يتوقف إطلاق شركتك على تصميم شعار، أو يتوقف عملك بسبب الحاجة لمحتوى متجدد لموقعك، ربما تملك فكرة رائعة
+                لبرنامج أو تطبيق ولكن ليست لديك أدنى فكرة عن البرمجة والتطوير، لديك بحث دراسي أو ترجمة مطلوبة في وقت معين
+                وتحتاج لمن يساعدك فيها.
+                يوفّر خمسات كل الخدمات الإبداعية والاحترافية التي تحتاجها لتنمية وتطوير أعمالك، والتي يمكن طلبها من أشخاص
+                موهوبين مستعدين لخدمتك في إنجاز مهامك بسهولة عبر الإنترنت وبأسعار اقتصادية تتناسب مع الأفراد ورواد الأعمال
+                من أصحاب المشاريع الناشئة.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-mdb-toggle="collapse"
+                data-mdb-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                <h5>كيف يضمن موقع خمسات حقوقي؟</h5>
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+              data-mdb-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                موقع خمسات يضمن لك حقوقك بشكل كامل، كن مطمئنا عند شراء أي خدمة معروضة في الموقع، يقوم خمسات بدور الوسيط
+                بين المشتري والبائع ويحمي حقوق الطرفين المالية في حال الالتزام بشروط موقع خمسات وبنود الضمان والإبقاء على
+                جميع التواصلات داخل الموقع.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Common Questions Section -->
+    
+  </div>
+
+  <!-- Js Fills + js/bootstrap -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <!-- MDB Cdn -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"></script>
+</body>
+
+</html>

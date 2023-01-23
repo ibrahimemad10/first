@@ -1,0 +1,96 @@
+:root {
+  --backgroundDark: #424242;
+  --hoverIcone: #c1c1c17c;
+  --colorGreen: #00b44b;
+  --colorStar: #ffa825;
+  --colorWhite: #fff;
+  --colorBlack: #000;
+  --colorGray: #7b7b7b;
+  --backgroundCard: #0d0d0d63;
+  --backgroundSection: #f1f1f1;
+  --backgroundHowto: #fff;
+}
+.button {
+  border: none;
+  outline: none;
+  background: none;
+  color: var(--colorWhite);
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+.button:hover {
+  background-color: var(--hoverIcone);
+}
+.account {
+  border: 1px solid var(--hoverIcone);
+  outline: none;
+  background: none;
+  color: var(--colorWhite);
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+.account:hover {
+  background-color: var(--hoverIcone);
+}
+.button-menu {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  display: flex;
+  justify-content: right;
+  padding: 12px 35px;
+  font-size: 1.1rem;
+  transition: all 0.2S ease;
+}
+.button-menu:hover {
+  background-color: var(--hoverIcone);
+  color: var(--colorGreen);
+}
+.button-more {
+  background: none;
+  outline: none;
+  border: 1px solid var(--colorGreen);
+  color: var(--colorGreen);
+  padding: 7px 13px;
+  position: relative;
+  overflow: hidden;
+  font-weight: 500;
+}
+.button-more::before {
+  content: '';
+  background-color: var(--colorGreen);
+  position: absolute;
+  z-index: -5;
+  left: 0;
+  top: 0;
+  width: 130%;
+  height: 150%;
+  border-radius: 0 50px 50px 0;
+  transform: translateY(-50%) translateX(-100%);
+  transition: all 0.5s ease;
+}
+.button-more:hover {
+  color: var(--colorWhite);
+}
+.button-more:hover::before {
+  transform: translateY(0) translateX(0);
+}
+.link-card {
+  color: var(--colorBlack);
+  transition: all 0.2s ease;
+}
+.link-card:hover {
+  color: var(--colorGreen);
+}
+.desc-link {
+  color: var(--colorGray);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.star {
+  color: var(--colorStar);
+  font-size: 0.9rem;
+}

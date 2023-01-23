@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Jost:wght@100;200;300;400&family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&family=Merriweather+Sans:wght@300;400;500;600;700;800&family=Noto+Sans+Arabic:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&family=Roboto+Condensed:ital,wght@1,300&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Cairo', sans-serif;
+  scroll-behavior: smooth;
+}
+html {
+  font-size: 16px;
+}
+body {
+  direction: rtl;
+}
+:root {
+  --backgroundDark: #424242;
+  --hoverIcone: #c1c1c17c;
+  --colorGreen: #00b44b;
+  --colorStar: #ffa726;
+  --colorWhite: #fff;
+  --backgroundCard: #0d0d0d63;
+  --backgroundSection: #f1f1f1;
+  --backgroundHowto: #fff;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--backgroundDark);
+  border-radius: 0;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--hoverIcone);
+  border-radius: 50px;
+}
+
+/* Start Navbar Section */
+.navbar {
+  background-color: var(--backgroundDark);
+  height: 62px;
+  z-index: 10;
+}
+.navbar .container-fluid {
+  height: 100%;
+}
+.navbar .khamsat-logo {
+  max-width: 165px;
+}
+.navbar .khamsat-icon {
+  width: 47px;
+  height: 42px;
+  z-index: 999;
+  transform: translateX(-140%);
+}
+.navbar .navbar-toggler {
+  border: none;
+  box-shadow: none;
+  border-radius: unset;
+  transition: all 0.3s ease;
+}
+.navbar .navbar-toggler:hover {
+  background-color: var(--hoverIcone);
+}
+.navbar .navbar-toggler i {
+  font-size: 1.6rem;
+  color: var(--colorWhite);
+}
+.navbar .offcanvas-header {
+  background-color: var(--backgroundDark);
+}
+.navbar .offcanvas-title {
+  width: 120px;
+}
+.accordion-button:hover {
+  background-color: var(--hoverIcone);
+  color: var(--colorGreen);
+}
+.accordion-button::after {
+  margin-right: auto;
+  margin-left: 0;
+}
+.accordion-item {
+  border: none;
+}
+.accordion-button:not(.collapsed) {
+  color: #000000;
+  background-color: #ffffff;
+  box-shadow: none;
+  outline: none;
+}
+.accordion-button:focus {
+  z-index: 3;
+  border-color: unset;
+  outline: 0px;
+  box-shadow: none;
+}
+.offcanvas-end {
+  width: 335px;
+}
+/* End Navbar Section */
+
+/* Start Main Setion */
+.main {
+  background-image: url("/images/background-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+.main h1, h5 {
+  line-height: 1.8em;
+}
+.main input {
+  outline-offset: 2PX;
+  outline-color: var(--colorGreen);
+  border: none;
+  font-size: 1.1rem;
+}
+.main .search {
+  z-index: 5;
+  transform: translateX(110%);
+  border: none;
+  outline: none;
+  background-color: var(--colorGreen);
+  height: 79%;
+  width: 75px;
+  color: var(--colorWhite);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.main .more-info {
+  z-index: 5;
+  transform: translateY(100%) translateX(-50%);
+  left: 50%;
+}
+.main .more-info button {
+  outline: none;
+  border: none;
+  background: transparent;
+  color: var(--colorWhite);
+  font-weight: 600;
+}
+.main .more-info button i {
+  color: var(--colorWhite);
+  font-size: 1.3rem;
+  animation: down 2s infinite linear reverse;
+}
+@keyframes down {
+  0% {
+    transform: translateY(90%);
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateY(-50%);
+    opacity: 0.1;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(90%);
+    opacity: 1;
+  }
+}
+/* End Main Setion */
+
+/* Start Services Section */
+.services .img {
+  max-height: 200px;
+  cursor: pointer;
+}
+.services .img .title-card {
+  top: 0;
+  left: 0;
+  color: var(--colorWhite);
+  background-color: var(--backgroundCard);
+  z-index: 9;
+}
+/* End Services Section */
+
+/* Start How To Section */
+.use {
+  background-color: var(--backgroundSection);
+}
+.how-to {
+  min-height: 150px;
+  background-color: var(--backgroundHowto);
+}
+.svg-img {
+  width: 75px;
+  height: 60px;
+}
+.how-to .desc h5 {
+  font-weight: 600;
+}
+.number {
+  background-color: var(--colorGreen);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transform: translateX(70%) translateY(50%);
+}
+.number h4 {
+  color: var(--colorWhite);
+}
+/* End How To Section */
+
+/* Start Common Questions Section */
+.questions {
+  background-color: var(--backgroundSection);
+}
+
+.accordion-item {
+  background-color: none !important;
+}
+.accordion-item:focus {
+  background-color: none !important;
+}
+/* End Common Questions Section */
+
+/* Respnsive */
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 13px;
+  }
+  .main .title-web {
+    width: 78% !important;
+  }
+  .main .search {
+    width: 55px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .hide {
+    display: none;
+  }
+  .navbar .khamsat-icon {
+    display: block;
+  }
+}
+
+
+
